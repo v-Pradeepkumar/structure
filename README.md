@@ -165,3 +165,20 @@ int main() {
 
 
 
+// use of typedef is change the old dtatype to new datatype
+//o/p >> 100
+ 
+ 
+#include <stdio.h>
+typedef int INTEGER ;
+int main() {
+    INTEGER var = 100 ;
+    printf("%d\n ", var);
+    return 0;
+}
+
+
+
+
+
+
