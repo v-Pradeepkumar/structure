@@ -182,3 +182,26 @@ int main() {
 
 
 
+// how to initialize structure and accessing members of structure this code for initialize
+
+ 
+ 
+#include <stdio.h>
+struct car {
+ char engine[50] ;
+ char fuel_type[10] ;
+ int fuel_tank_cap ;
+ int seating_cap ;
+ float city_mileage ;
+};
+int main() {
+   struct car c1 = { "DDis 190 Engine" , "Diesel" , 37 , 5 , 19.74} ;
+   struct car c2 = { "kappa" , "petrol" , 22 , 8 , 14.5} ;
+    
+    return 0;
+}
+
+
+
+
+
