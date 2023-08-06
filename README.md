@@ -228,3 +228,33 @@ int main() {
 
 
 
+
+
+/* how to  accessing members of structure this code for accesssing we use (.) operator   o/p  
+    10 20 30
+    10 20 30*/
+ 
+ 
+#include <stdio.h>
+struct abc {
+
+ int x ;
+ int y ;
+ int z ;
+};
+
+
+int main() {
+   struct abc a ={ .x = 10, .y =20 , .z = 30} ;
+    printf("%d %d %d\n", a.x , a.y ,  a.z) ;
+     struct abc b ={ .x = 10, .y =20 , .z = 30} ;
+    printf("%d %d %d", b.x , b.y ,  b.z) ;
+    return 0;
+}
+
+
+
+
+
+
+
