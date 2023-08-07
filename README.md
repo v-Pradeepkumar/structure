@@ -365,3 +365,28 @@ int main() {
 }
 
 
+
+
+
+
+// structure packing in c, because of structure padding, size of the structure becomes more than the size of the actual structure. due to this some memory will get wasted. so we use structure packing instead of structure padding avoid wastage of memory and cpu cycle. o/p >> 6 // 6 bytes
+
+
+#pragma pack(1)
+
+struct abc{
+    char a ;
+    int b ;
+    char c ;
+}var ;
+
+int main() {
+    printf("%d", sizeof(var));
+
+    return 0;
+}
+
+
+
+
+
