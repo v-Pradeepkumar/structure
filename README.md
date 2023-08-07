@@ -409,3 +409,27 @@ int main() {
 
 
 
+
+
+// find the o/p >> 0 c
+
+#include <stdio.h>
+
+struct ournode{
+    char x, y, z ;
+};
+
+
+
+int main() {
+    struct ournode p = {'1', '0', 'a'+2} ;  // 'a' is ascii value of a 95 +2 = 97> c
+    struct ournode *q = &p ;
+    printf("%c %c", *((char*)q+1), *((char*)q+2)) ;   //(char*) it called as type casting - pointing a particular character
+
+    return 0;
+}  
+
+
+
+
+
