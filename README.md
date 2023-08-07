@@ -1,5 +1,17 @@
 # structure
 
+
+
+SYNTAX
+struct abc {
+    char  a ;
+    int b ;
+    char c ;
+};
+
+
+
+
 // function pointers it points to a function o/p>> 30 this pointer pointing the add function
 #include <stdio.h>
 int add(int  a ,int b)
@@ -338,6 +350,18 @@ int main() {
 
 
 
+// structure padding in c. padding means when we declare a structure a block of memory will be allocated for it.  o/p >> 12
+#include <stdio.h>
+struct abc {
+    char  a ;
+    int b ;
+    char c ;
+};
+int main() {
+    struct abc var ;
+    printf("%d" , sizeof(var));
 
+    return 0;
+}
 
 
