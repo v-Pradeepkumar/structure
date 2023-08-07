@@ -258,3 +258,61 @@ int main() {
 
 
 
+
+// declare an array of structure
+/*
+i/p >>  Enter the car 1 fuel tank capacity : 23
+        Enter the car 1 seating capacity : 5
+        Enter the car 1 city mileage : 17.89
+        Enter the car 2 fuel tank capacity : 22
+        Enter the car 2 seating capacity : 7
+        Enter the car 2 city mileage : 14.65
+o/p>> car 1 details :
+      fuel tank capacity :23
+        seating capacity :5
+         city mileage :17.889999
+ 
+ car 2 details :
+ fuel tank capacity :22
+ seating capacity :7
+ city mileage :14.650000*/
+#include <stdio.h>
+
+struct car{
+    int fuel_tank_cap ;
+    int seating_cap ;
+    float city_mileage ;
+};
+int main() {
+    struct car c[2] ;
+    int i ;
+    for(i = 0 ; i < 2 ; i++)
+    {
+        printf("Enter the car %d fuel tank capacity : ",i+1) ;
+        scanf("%d",&c[i].fuel_tank_cap) ;
+        printf("Enter the car %d seating capacity : ",i+1) ;
+        scanf("%d",&c[i].seating_cap) ;
+        printf("Enter the car %d city mileage : ",i+1) ;
+        scanf("%f",&c[i].city_mileage) ;
+        
+    }
+    printf("\n");
+    for(i = 0 ; i < 2 ; i++)
+    {
+       printf("\n car %d details :\n ",i+1) ; 
+       printf("fuel tank capacity :%d\n ",c[i].fuel_tank_cap) ; 
+       printf("seating capacity :%d\n ",c[i].seating_cap) ;
+       printf("city mileage :%f\n ",c[i].city_mileage) ;
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
